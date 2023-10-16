@@ -8,12 +8,9 @@ class ElectronicProduct extends AbstractProduct {
         this.Elbrand = brand;
     }
 
-    public String getBrand() {
-        return Elbrand;
-    }
 
     @Override
-    public double CalculatePrice() {
+    public double calculatePrice() {
         // Complexité cyclomatique élevée (calcul compliqué)
         double price = getCost() * 2.0;
         for (int i = 0; i < 100; i++) {
